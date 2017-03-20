@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-def decorator(function_to_decorate):
+def log_duration(function_to_decorate):
     def wrapper():
         print('Decorated function')
         function_to_decorate()
@@ -9,7 +9,7 @@ def decorator(function_to_decorate):
     return wrapper
 
 
-@decorator
+@log_duration
 def just_print_function():
     print('Function was decorated at')
 
