@@ -1,5 +1,5 @@
-class only_even_int():
-    '''This class at to list only even numbers of type int'''
+class only_even_ints():
+    '''This class add to list only even numbers of type int'''
 
     message = 'I LIKE ONLY INT TYPE AND I DON\'T LIKE ODD NUMBERS!'
 
@@ -25,4 +25,8 @@ class only_even_int():
 
 values_list = [2, 4, 6, 8, 10, 1, 3, 5, 7, 9, 'one', 'two', 5.5, 3.3]
 my_list = only_even_ints(values_list)
+print(my_list[:])
+print('\n')
+my_list[0] = 2000000000
+my_list[1] = 1
 print(my_list[:])
