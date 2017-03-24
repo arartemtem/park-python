@@ -8,6 +8,7 @@ def ignore_exceptions(exception_func):
             return exception_func(x, y)
     return wrapper
 
+
 @ignore_exceptions
 def str_plus_int(x, y):
     z = x + y
